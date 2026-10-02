@@ -1,0 +1,15 @@
+{
+  "provenance": "RECONSTRUCTION CHOICES; original settings unknown; not paper reproduction",
+  "R": 256, "fit_per_region": 200, "calibration_per_region": 200,
+  "offline_per_region": 200, "m_q": 512, "epoch_change_threshold": 0.05,
+  "fraction_denominator": "whole", "dbar": "mean_exact_residual_query_item_distance",
+  "rank": 64, "ridge": 0.000001, "alpha": 0.05, "alpha_q": 0.05,
+  "ambiguity": "closed_overlap_length_then_id", "replay_resolution": false,
+  "small_region": "fail_without_two_fit_items; infinite_radius_if_insufficient_residual_support",
+  "tau": 0.5, "k": 10, "ef": 96, "rho": 4, "seed": 42,
+  "M": 32, "efConstruction": 200, "alpha_prune": 1.2,
+  "segment_size": 4096, "lease_seconds": 120,
+  "replay_seeds": [1, 2, 3, 4, 5], "replay_length": 10000,
+  "replay_popularity_assignment": "seeded_shuffle_then_rank^-1",
+  "query_pool": "explicit_manifest_disjoint_residual_replay_offline_evaluation_ids"
+}

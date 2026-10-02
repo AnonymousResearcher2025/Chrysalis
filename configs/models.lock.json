@@ -1,0 +1,50 @@
+{
+  "minilm": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "kind": "text",
+    "max_tokens": 256,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  },
+  "mpnet": {
+    "id": "sentence-transformers/all-mpnet-base-v2",
+    "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "kind": "text",
+    "max_tokens": 384,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  },
+  "e5-base": {
+    "id": "intfloat/e5-base-v2",
+    "revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd",
+    "kind": "e5",
+    "max_tokens": 512,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  },
+  "e5-large": {
+    "id": "intfloat/e5-large-v2",
+    "revision": "f169b11e22de13617baa190a028a32f3493550b6",
+    "kind": "e5",
+    "max_tokens": 512,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  },
+  "clip-b32": {
+    "id": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "kind": "clip",
+    "max_tokens": 77,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  },
+  "clip-l14": {
+    "id": "openai/clip-vit-large-patch14",
+    "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41",
+    "kind": "clip",
+    "max_tokens": 77,
+    "normalization": "unit_l2",
+    "bridge_normalization": "none"
+  }
+}
