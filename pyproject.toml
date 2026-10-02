@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==75.8.0", "wheel==0.45.1", "pybind11==2.13.6"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chrysalis-reconstruction"
+version = "0.1.0"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.13"
+dependencies = ["numpy==2.2.2", "scipy==1.15.1", "scikit-learn==1.6.1", "rocksdict==0.3.25", "torch==2.9.0", "sentence-transformers==3.4.1", "transformers==4.48.3", "huggingface-hub==0.28.1", "grpcio==1.70.0", "boto3==1.35.99", "Pillow==11.1.0", "requests==2.32.3"]
+
+[project.optional-dependencies]
+datasets = ["pyarrow==19.0.0"]
+
+[project.urls]
+Repository = "https://github.com/AnonymousResearcher2025/Chrysalis"
+Documentation = "https://github.com/AnonymousResearcher2025/Chrysalis/blob/main/README.md"
+
+[project.scripts]
+chrysalis = "chrysalis.cli:main"
+
+[tool.setuptools]
+packages = ["chrysalis"]
+
+[tool.setuptools.data-files]
+"share/chrysalis/configs" = ["configs/models.lock.json", "configs/smoke.json", "configs/provisional.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
