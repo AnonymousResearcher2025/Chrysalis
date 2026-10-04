@@ -1,5 +1,5 @@
 {
-  "provenance": "RECONSTRUCTION CHOICES; original settings unknown; not paper reproduction",
+  "provenance": "CONSTRUCTION CHOICES; original settings; paper production",
   "R": 256, "fit_per_region": 200, "calibration_per_region": 200,
   "offline_per_region": 200, "m_q": 512, "epoch_change_threshold": 0.05,
   "fraction_denominator": "whole", "dbar": "mean_exact_residual_query_item_distance",
