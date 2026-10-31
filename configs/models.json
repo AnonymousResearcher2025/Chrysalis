@@ -1,0 +1,15 @@
+{
+  "minilm": {"id": "sentence-transformers/all-MiniLM-L6-v2", "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41", "kind": "sentence", "dim": 384, "max_tokens": 256},
+  "mpnet": {"id": "sentence-transformers/all-mpnet-base-v2", "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130", "kind": "sentence", "dim": 768, "max_tokens": 384},
+  "e5-base": {"id": "intfloat/e5-base-v2", "revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd", "kind": "e5", "dim": 768, "max_tokens": 512},
+  "e5-large": {"id": "intfloat/e5-large-v2", "revision": "f169b11e22de13617baa190a028a32f3493550b6", "kind": "e5", "dim": 1024, "max_tokens": 512},
+  "clip-b32": {"id": "openai/clip-vit-base-patch32", "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268", "kind": "clip", "dim": 512, "max_tokens": 77},
+  "clip-l14": {"id": "openai/clip-vit-large-patch14", "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41", "kind": "clip", "dim": 768, "max_tokens": 77},
+  "glove": {"id": "glove.6B.300d", "kind": "glove", "dim": 300, "url": "https://nlp.stanford.edu/data/glove.6B.zip", "member": "glove.6B.300d.txt"},
+  "pairs": {
+    "P1": {"corpus": "wiki1m", "old": "minilm", "new": "mpnet", "queries": "nq"},
+    "P2": {"corpus": "msmarco", "old": "e5-base", "new": "e5-large", "queries": "msmarco-dev"},
+    "P3": {"corpus": "laion1m", "old": "clip-b32", "new": "clip-l14", "queries": "laion-captions"},
+    "P4": {"corpus": "wiki1m", "old": "glove", "new": "mpnet", "queries": "nq"}
+  }
+}

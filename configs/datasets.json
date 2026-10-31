@@ -1,0 +1,10 @@
+{
+  "wiki1m": {"url": "https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz", "size": 1000000, "seed": 0},
+  "nq": {"urls": ["https://dl.fbaipublicfiles.com/dpr/data/retriever/nq-dev.qa.csv",
+                  "https://dl.fbaipublicfiles.com/dpr/data/retriever/nq-test.qa.csv"], "size": 10000, "seed": 0},
+  "msmarco": {"url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/collectionandqueries.tar.gz",
+              "collection": "collection.tsv", "dev": "queries.dev.small.tsv"},
+  "trec-dl": {"urls": ["https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz",
+                       "https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2020-queries.tsv.gz"]},
+  "laion1m": {"size": 1000000, "captions": 10000, "short_side": 256, "seed": 0}
+}
