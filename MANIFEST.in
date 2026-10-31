@@ -1,6 +1,0 @@
-include README.md CMakeLists.txt CITATION.cff requirements*.txt
-recursive-include cpp *.cpp
-recursive-include configs *.json
-recursive-include scripts *.py
-recursive-include tests *.py
-recursive-include docs *.md
